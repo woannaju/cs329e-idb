@@ -2,6 +2,8 @@ body{
 	background-color: #ffffff;
 	color: #333333;
 	font-family: 'Open Sans', sans-serif
+	padding: 0;
+	margin: 0;
 
 }
 h1,title{
@@ -19,7 +21,7 @@ h3{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.17em;
 }
-h4,td{
+h4,td,p{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.12em;
 }
@@ -33,16 +35,15 @@ th,td{
 }
 ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
     width: 100%;
-    border: 1px solid #e7e7e7;
+    margin: 0;
     background-color: #f3f3f3;
 }
 
 li {
+	font-family: 'Open Sans', sans-serif;
     float: left;
 }
 
