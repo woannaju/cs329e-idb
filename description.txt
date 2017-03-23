@@ -1,0 +1,7 @@
+Anusher 
+
+Implemented the State model page and the Texas attribute page. The entire State pillar is working off of it's own CSS file (will plan to use the main.CSS instead at a later time). Will be implementing a slide show on one of the state pages as possible JavaScript requirement. The purpose of these pages is to give the user a rich experience about some of the U.S. states and some interesting information about them, especially regarding to the different parks.
+
+Johans
+ 
+Implemented the Florida and California attribute pages. Also used CSS file asscoicated with Texas. The purpose of these pages is to give the user a rich experience about some of the U.S. states and some interesting information about them, especially regarding to the different parks. (Same as above). Added videos from youtube and pictures to the State pillars and its attributes for users to gain more knowledge about the specific states. Also gave a link to external page (Wikipedia) so that user can find more information if interested. 
