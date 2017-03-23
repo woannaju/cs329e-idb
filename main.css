@@ -1,11 +1,13 @@
-@font-family{
-	font-family: 'Bebas Neue';
-	src: url(./fonts/BebasNeue-Regular.otf) format("opentype");
+@font-face {
+    font-family: 'bebas_neue_regularregular';
+    src: url('bebasneue-regular-webfont.woff2') format('woff2'),
+    url('bebasneue-regular-webfont.woff') format('woff'),
+    url('bebasneue-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }
-@font-family{
-	font-family: 'Open Sans';
-	src: url(./fonts/OpenSans-Regular.ttf);
-}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 body{
 	background-color: none;
 	color: #333333;
