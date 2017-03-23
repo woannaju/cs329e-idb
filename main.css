@@ -16,6 +16,11 @@ body{
 	background-position:left top;
 	background-size: 100%;
 }
+.states{
+	background-image: url("./images/st_bg.jpg");
+	background-position: left top;
+	background-size: 100%;
+}
 h1,title{
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 50px;
@@ -43,6 +48,11 @@ th,td{
 	text-align: left;
 	padding: 15px;
 	border-right: 0px;
+}
+.headtitle{
+	text-align: center;
+	font-size: 5em;
+	color: #E5F2FF;
 }
 .background{
 	background-image: url('background.jpg')
@@ -73,6 +83,7 @@ ul {
     width: 100%;
     margin: 0;
     background-color: none;
+    border-right: 0px; 
 }
 
 li {
@@ -97,4 +108,21 @@ li a:hover {
 }
 img{
 	width: 100%;
+}
+div img{
+	display: inline-block;
+}
+div p{
+	display: inline-block;
+}
+.description{
+	position: relative;
+	margin-right: 200px;
+	color: #E5F2FF;
+}
+.img-desc{
+	float: left;
+	vertical-align: middle;
+	width: 150px;
+	height: 200px;
 }
