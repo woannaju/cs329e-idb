@@ -1,3 +1,11 @@
+@font-family{
+	font-family: Bebas Neue;
+	src: url(./fonts/BebasNeue-Regular.otf);
+}
+@font-family{
+	font-family: Open Sans;
+	src: url(./fonts/OpenSans-Regular.otf);
+}
 body{
 	background-color: none;
 	color: #333333;
@@ -215,4 +223,7 @@ div h3{
 }
 .z2{
 	z-index: 5;
+}
+.desc-table{
+
 }
