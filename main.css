@@ -1,9 +1,9 @@
 @font-family{
-	font-family: Bebas Neue;
+	font-family: 'Bebas Neue';
 	src: url(./fonts/BebasNeue-Regular.otf) format("opentype");
 }
 @font-family{
-	font-family: Open Sans;
+	font-family: 'Open Sans';
 	src: url(./fonts/OpenSans-Regular.ttf);
 }
 body{
