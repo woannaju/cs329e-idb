@@ -5,6 +5,14 @@ body{
 	padding: 0;
 	margin: 0;
 }
+.transparent{
+	background-color: rgba(229, 229, 222,0.25);
+	width:85%;
+	height: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	/*padding: 15px;*/
+}
 .frontpage{
 	background-image: url("./images/fp_bg.jpg");
 	background-position:left top;
@@ -44,7 +52,7 @@ h4,td{
 p{
 	font-family: 'Open Sans', sans-serif;
 	font-size: .75em;
-	width: 20%;
+	width: 100%;
 }
 table{
 	width: 100%
@@ -124,16 +132,21 @@ div img{
 }
 div p{
 	display: inline-block;
+	background-color: #5E5E5E;
+	opacity: 0.8;
 	margin-right: 6%;
 	margin-left: 12%;
 	left:10.85%;
 	margin: 0;
-	background-color: #5E5E5E;
-	opacity: 0.8;
 	overflow: hidden;
 	padding-left: 1.075%;
 	padding-right: 1.075%;
 	padding-bottom: 1%;
+	height: 255px;
+	width: 20%;
+	vertical-align: middle;
+	text-align: left;
+	margin: 0;
 }
 div h3{
 	display: inline-block;
@@ -143,11 +156,14 @@ div h3{
 	margin-bottom: 0;
 	margin-top: 0;
 	padding-top: .5%;
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 1.075%;
+	padding-right: 1.075%;
 	color:#E5F2FF;
 	background-color: #5E5E5E;
 	opacity: 0.8;
+	width: 20%;
+	text-align: center;
+	margin: 0;
 
 }
 
@@ -155,6 +171,7 @@ div h3{
 	position: relative;
 	color: #E5F2FF;
 	margin-bottom: 20px;
+	left: 10.85%;
 }
 .img-desc{
 	vertical-align: middle;
