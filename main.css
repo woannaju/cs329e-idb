@@ -6,13 +6,13 @@ body{
 	margin: 0;
 }
 .frontpage{
-	background-image: url("./images/background.jpg");
+	background-image: url("./images/fp_bg.jpg");
 	background-position:left top;
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
 .aboutus{
-	background-image: url(".images/about_bg.jpg");
+	background-image: url("./images/about_bg.jpg");
 	background-position:left top;
 	background-size: 100%;
 }
