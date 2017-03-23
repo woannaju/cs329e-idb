@@ -88,7 +88,7 @@ ul {
     width: 100%;
     margin: 0;
     background-color: none;
-    border-right: 0px; 
+    border-right: 0px;
 }
 
 li {
@@ -172,7 +172,6 @@ div h3{
   border-radius: 50%;
 }
 .right{
-	margin-left: 0;
 	right:5%;
 	float: right;
 }
@@ -181,7 +180,7 @@ div h3{
 	float: left;
 }
 .middle{
-	margin:auto;
+	float:center;
 	margin-left: 2%;
 }
 .text-middle{
@@ -200,4 +199,3 @@ div h3{
 .z2{
 	z-index: 5;
 }
-
