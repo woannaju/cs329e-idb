@@ -35,11 +35,16 @@ h2,th{
 }
 h3{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.17em;
+	font-size: 1.35em;
 }
-h4,td,p{
+h4,td{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.12em;
+}
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: .75em;
+	width: 20%;
 }
 table{
 	width: 100%
@@ -111,18 +116,88 @@ img{
 }
 div img{
 	display: inline-block;
+	text-align: center;
+	padding-right: 6%;
+	padding-left: 6%;
+	padding-bottom: 10px;
+	padding-top: 5px;
 }
 div p{
 	display: inline-block;
+	margin-right: 6%;
+	margin-left: 12%;
+	left:10.85%;
+	margin: 0;
+	background-color: #5E5E5E;
+	opacity: 0.8;
+	overflow: hidden;
+	padding-left: 1.075%;
+	padding-right: 1.075%;
+	padding-bottom: 1%;
 }
+div h3{
+	display: inline-block;
+	margin-right: 6%;
+	margin-left: 10.85%;
+	left: 10.85%;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-top: .5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	color:#E5F2FF;
+	background-color: #5E5E5E;
+	opacity: 0.8;
+
+}
+
 .description{
 	position: relative;
-	margin-right: 200px;
 	color: #E5F2FF;
+	margin-bottom: 20px;
 }
 .img-desc{
-	float: left;
 	vertical-align: middle;
-	width: 150px;
-	height: 200px;
+	width: 100%;
+	height: auto;
 }
+.img-circle{
+	border-radius: 50%
+}
+.circular-portrait {
+  position: relative;
+  width: 20%;
+  height: 20%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.right{
+	margin-left: 0;
+	right:5%;
+	float: right;
+}
+.left{
+	left: 5%;
+	float: left;
+}
+.middle{
+	margin:auto;
+	margin-left: 2%;
+}
+.text-middle{
+	margin: 0;
+	padding-left: 5%;
+}
+.text-left{
+	margin-right: -7.8%;
+}
+.text-right{
+	margin-left: 8.05%;
+}
+.z1{
+	z-index: 10;
+}
+.z2{
+	z-index: 5;
+}
+
