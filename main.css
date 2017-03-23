@@ -1,10 +1,10 @@
 @font-family{
 	font-family: Bebas Neue;
-	src: url(./fonts/BebasNeue-Regular.otf);
+	src: url(./fonts/BebasNeue-Regular.otf) format("opentype");
 }
 @font-family{
 	font-family: Open Sans;
-	src: url(./fonts/OpenSans-Regular.otf);
+	src: url(./fonts/OpenSans-Regular.ttf);
 }
 body{
 	background-color: none;
