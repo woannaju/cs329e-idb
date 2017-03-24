@@ -226,6 +226,10 @@ div h3{
 .z2{
 	z-index: 5;
 }
-.desc-table{
-
+.marleft{
+	margin-left: 15px;
+}
+iframe{
+	display: block;
+	margin: auto;
 }
