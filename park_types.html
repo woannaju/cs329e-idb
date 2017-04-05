@@ -46,7 +46,7 @@
 		    <tr id= "r2">
 		        <td><a href="State_Park.html">State Park</a></td>
             <td><a href="Anza-Borrego_park.html">Anza-Borrego Desert State Park</a></td>
-            <td>10,234</td>
+            <td>10234</td>
             <td>An area of land that is owned and protected by a U.S. state because of its natural beauty or its importance in history.</td>
             <td>Niagara Falls State Park</td>
 		    </tr>
@@ -182,6 +182,13 @@
       	});
 
       	$("#c3").click(function(){
+          if (c3Sort){
+            document.body.style.backgroundColor = "red";
+          }
+          else{
+            //need to change only 1 tr text content
+            //table.textContent = "&#8592";
+          }
           var needSwitch3=true;
           while (needSwitch3){
             //remains false if everything is sorted so loop exits
@@ -191,12 +198,12 @@
               var x = rows[i].getElementsByTagName("TD")[2];
               var y = rows[i+1].getElementsByTagName("TD")[2];
               //ascending sort
-              if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c3Sort){
+              if (Number(x.innerHTML) > Number(y.innerHTML) && !c3Sort){
                 rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
                 needSwitch3=true;
               }
               //descending sort
-              if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c3Sort){
+              if (Number(x.innerHTML) < Number(y.innerHTML) && c3Sort){
                 rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
                 needSwitch3=true;
               }
@@ -216,12 +223,12 @@
               var x = rows[i].getElementsByTagName("TD")[3];
               var y = rows[i+1].getElementsByTagName("TD")[3];
               //ascending sort
-              if ((x.innerHTML) > (y.innerHTML) && !c4Sort){
+              if ((x.innerHTML.toLowerCase()) > (y.innerHTML.toLowerCase()) && !c4Sort){
                 rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
                 needSwitch4=true;
               }
               //descending sort
-              if ((x.innerHTML)< (y.innerHTML) && c4Sort){
+              if ((x.innerHTML.toLowerCase())< (y.innerHTML.toLowerCase().toLowerCase()) && c4Sort){
                 rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
                 needSwitch4=true;
               }
