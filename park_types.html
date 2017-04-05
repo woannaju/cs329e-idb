@@ -87,182 +87,160 @@
       ADD jQuery <SCRIPT> TO THE <head>. ADD <a id="p1">Previous</a> AND <a id="p2">Next</a> BEFORE <table>. THESE WILL BE YOUR BUTTONS TO SWITCH THROUGH TWO PAGES WITH THREE INSTANCES EACH. FOR EACH <tr> (THERE SHOULD BE 6 TOTAL), ADD IDs "r1" "r2" "r3" "r4" "r5" "r6" RESPECTIVELY.
       */
 
-      $(document).ready(function(){
-      	$("#r4").hide();
-      	$("#r5").hide();
-      	$("#r6").hide();
-      	$("#p1").hide();
-      	var flag = true;
-      	var c = 0;
+$(document).ready(function(){
 
-      	table = document.getElementById("table");
-      	rows = table.getElementsByTagName("TR");
+	table = document.getElementById("table");
+	rows = table.getElementsByTagName("TR");
 
-      	var c1Sort = false;
-      	var c2Sort = false;
-      	var c3Sort = false;
-      	var c4Sort = false;
-      	var c5Sort = false;
+	$("#"+rows[4].getAttribute('id')).hide();
+	$("#"+rows[5].getAttribute('id')).hide();
+	$("#"+rows[6].getAttribute('id')).hide();
+	$("#p1").hide();
+	var flag = true;
+	var c = 0;
 
-      	$("#p1").click(function(){
-      		$("#r4").hide();
-      		$("#r5").hide();
-      		$("#r6").hide();
-      		$("#r1").show();
-      		$("#r2").show();
-      		$("#r3").show();
-      		$("#p1").hide();
-      		$("#p2").show();
-      		flag = true;
-      		c = 0;
-      	});
+	var c1Sort = false;
+	var c2Sort = false;
+	var c3Sort = false;
+	var c4Sort = false;
+	var c5Sort = false;
 
-      	$("#p2").click(function(){
-      		$("#r4").show();
-      		$("#r5").show();
-      		$("#r6").show();
-      		$("#r1").hide();
-      		$("#r2").hide();
-      		$("#r3").hide();
-      		$("#p1").show();
-      		$("#p2").hide();
-      		flag = false;
-      		c = 3;
-      	});
+	$("#p1").click(function(){
+		$("#"+rows[4].getAttribute('id')).hide();
+		$("#"+rows[5].getAttribute('id')).hide();
+		$("#"+rows[6].getAttribute('id')).hide();
+		$("#"+rows[1].getAttribute('id')).show();
+		$("#"+rows[2].getAttribute('id')).show();
+		$("#"+rows[3].getAttribute('id')).show();
+		$("#p1").hide();
+		$("#p2").show();
+		flag = true;
+		c = 0;
+	});
 
-        //each sort variable decides what kind of sort to do and whether it is sorted: c1Sort=false = descending; true = ascending
-      	$("#c1").click(function(){
-          var needSwitch1=true;
-      		while (needSwitch1){
-            //remains false if everything is sorted so loop exits
-            needSwitch1=false;
-      			for (var i=1; i<(rows.length-1); i++){
-              //reads 1st row (x) and second row (y)
-      				var x = rows[i].getElementsByTagName("TD")[0];
-      				var y = rows[i+1].getElementsByTagName("TD")[0];
-              //ascending sort
-      				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c1Sort){
-      					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
-                needSwitch1=true;
-      				}
-              //descending sort
-      				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c1Sort){
-      					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
-                needSwitch1=true;
-      				}
-      			}
-      		}
-          //toggles the sorting type
-      		c1Sort = !c1Sort;
-      	});
+	$("#p2").click(function(){
+		$("#"+rows[4].getAttribute('id')).show();
+		$("#"+rows[5].getAttribute('id')).show();
+		$("#"+rows[6].getAttribute('id')).show();
+		$("#"+rows[1].getAttribute('id')).hide();
+		$("#"+rows[2].getAttribute('id')).hide();
+		$("#"+rows[3].getAttribute('id')).hide();
+		$("#p1").show();
+		$("#p2").hide();
+		flag = false;
+		c = 3;
+	});
 
-      	$("#c2").click(function(){
-          var needSwitch2=true;
-          while (needSwitch2){
-            //remains false if everything is sorted so loop exits
-            needSwitch2=false;
-            for (var i=1; i<(rows.length-1); i++){
-              //reads 1st row (x) and second row (y)
-              var x = rows[i].getElementsByTagName("TD")[1];
-              var y = rows[i+1].getElementsByTagName("TD")[1];
-              //ascending sort
-              if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c2Sort){
-                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
-                needSwitch2=true;
-              }
-              //descending sort
-              if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c2Sort){
-                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
-                needSwitch2=true;
-              }
-            }
-          }
-          //toggles the sorting type
-          c2Sort = !c2Sort;
-      	});
+function showAll(flag){
+	for (var i=1; i<=6; i++){
+		$("#"+rows[i].getAttribute('id')).show();
+	}
+}
 
-      	$("#c3").click(function(){
-          if (c3Sort){
-            document.body.style.backgroundColor = "red";
-          }
-          else{
-            //need to change only 1 tr text content
-            //table.textContent = "&#8592";
-          }
-          var needSwitch3=true;
-          while (needSwitch3){
-            //remains false if everything is sorted so loop exits
-            needSwitch3=false;
-            for (var i=1; i<(rows.length-1); i++){
-              //reads 1st row (x) and second row (y)
-              var x = rows[i].getElementsByTagName("TD")[2];
-              var y = rows[i+1].getElementsByTagName("TD")[2];
-              //ascending sort
-              if (Number(x.innerHTML) > Number(y.innerHTML) && !c3Sort){
-                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
-                needSwitch3=true;
-              }
-              //descending sort
-              if (Number(x.innerHTML) < Number(y.innerHTML) && c3Sort){
-                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
-                needSwitch3=true;
-              }
-            }
-          }
-          //toggles the sorting type
-          c3Sort = !c3Sort;
-      	});
+function hide(rows,flag){
+	if (flag){
+		$("#"+rows[4].getAttribute('id')).hide();
+		$("#"+rows[5].getAttribute('id')).hide();
+		$("#"+rows[6].getAttribute('id')).hide();
+	}
+	else{
+		$("#"+rows[1].getAttribute('id')).hide();
+		$("#"+rows[2].getAttribute('id')).hide();
+		$("#"+rows[3].getAttribute('id')).hide();
+	}
+}
 
-      	$("#c4").click(function(){
-          var needSwitch4=true;
-          while (needSwitch4){
-            //remains false if everything is sorted so loop exits
-            needSwitch4=false;
-            for (var i=1; i<(rows.length-1); i++){
-              //reads 1st row (x) and second row (y)
-              var x = rows[i].getElementsByTagName("TD")[3];
-              var y = rows[i+1].getElementsByTagName("TD")[3];
-              //ascending sort
-              if ((x.innerHTML.toLowerCase()) > (y.innerHTML.toLowerCase()) && !c4Sort){
-                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
-                needSwitch4=true;
-              }
-              //descending sort
-              if ((x.innerHTML.toLowerCase())< (y.innerHTML.toLowerCase().toLowerCase()) && c4Sort){
-                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
-                needSwitch4=true;
-              }
-            }
-          }
-          //toggles the sorting type
-          c4Sort = !c4Sort;
-      	});
 
-      	$("#c5").click(function(){
-          var needSwitch5=true;
-          while (needSwitch5){
-            //remains false if everything is sorted so loop exits
-            needSwitch5=false;
-            for (var i=1; i<(rows.length-1); i++){
-              //reads 1st row (x) and second row (y)
-              var x = rows[i].getElementsByTagName("TD")[4];
-              var y = rows[i+1].getElementsByTagName("TD")[4];
-              //ascending sort
-              if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c5Sort){
-                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
-                needSwitch5=true;
-              }
-              //descending sort
-              if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c5Sort){
-                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
-                needSwitch5=true;
-              }
-            }
-          }
-          //toggles the sorting type
-          c5Sort = !c5Sort;
-      	});
-      })
+	$("#c1").click(function(){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
+				var x = rows[i].getElementsByTagName("TD")[0];
+				var y = rows[i+1].getElementsByTagName("TD")[0];
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c1Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c1Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+			}
+		}
+		c1Sort = !c1Sort;
+		hide(rows,flag);
+	});
+
+	$("#c2").click(function(){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
+				var x = rows[i].getElementsByTagName("TD")[1];
+				var y = rows[i+1].getElementsByTagName("TD")[1];
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c2Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c2Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+			}
+		}
+		c2Sort = !c2Sort;
+		hide(rows,flag);
+	});
+
+	$("#c3").click(function(){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
+				var x = rows[i].getElementsByTagName("TD")[2];
+				var y = rows[i+1].getElementsByTagName("TD")[2];
+				if (parseInt(x.innerHTML) > parseInt(y.innerHTML) && !c3Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+				if (parseInt(x.innerHTML) < parseInt(y.innerHTML) && c3Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+			}
+		}
+		c3Sort = !c3Sort;
+		hide(rows,flag);
+	});
+
+	$("#c4").click(function(){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
+				var x = rows[i].getElementsByTagName("TD")[3];
+				var y = rows[i+1].getElementsByTagName("TD")[3];
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c4Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c4Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+			}
+		}
+		c4Sort = !c4Sort;
+		hide(rows,flag);
+	});
+
+	$("#c5").click(function(){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
+				var x = rows[i].getElementsByTagName("TD")[4];
+				var y = rows[i+1].getElementsByTagName("TD")[4];
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c5Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c5Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+			}
+		}
+		c5Sort = !c5Sort;
+		hide(rows,flag);
+	});
+})
       // -->
       </script>
     </body>
