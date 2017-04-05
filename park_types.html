@@ -2,6 +2,7 @@
   <head>
     <title>Park Types</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
 
@@ -22,13 +23,15 @@
     <a id="p1">Previous</a>
     <a id="p2">Next</a>
     <table id="table">
+      <div>
       <tr>
-				<th id="c1">Park Type</th>
-				<th id="c2">Park Example</th>
-				<th id="c3">Number Parks in USA</th>
-				<th id="c4">Definition</th>
-				<th id="c5">Most Popular Park</th>
+        <th><button id="c1" type="button" class="btn btn-default" style = "width:100%">Park Type</button></th>
+        <th><button id="c2" type="button" class="btn btn-default" style = "width:100%">Example</button></th>
+        <th><button id="c3" type="button" class="btn btn-default" style = "width:100%">Number Parks in USA</button></th>
+        <th><button id="c4" type="button" class="btn btn-default" style = "width:100%">Definition</button></th>
+        <th><button id="c5" type="button" class="btn btn-default" style = "width:100%">Most Popular Park</button></th>
 			</tr>
+    </div>
 		 <!-- <thead>
 		        <th>Park Type</th>
 		        <th>Park Example</th>
@@ -166,6 +169,13 @@ function hide(rows,flag){
 			}
 		}
 		c1Sort = !c1Sort;
+
+    //supposed to toggle text in button
+    if(c1Sort){
+      $(this).text("Park-");
+    if(!c1Sort){
+      $(this).text("Park+");
+
 		hide(rows,flag);
 	});
 
