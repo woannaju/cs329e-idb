@@ -47,28 +47,28 @@
 				<td><a href="Florida.html">Florida<a/></td>
 				<td>Tallahassee</td>
 				<td><img src="./images/florida.jpg" alt="Florida" style="max-width: 80%"></td>
-				<td><a href="Timucuan_park.html">Timucuan Preserve</a></td>
+				<td><a href="./Timucuan_park.html">Timucuan Preserve</a></td>
 				<td>Southeastern/Atlantic</td>
 			</tr>
 			<tr id="r4">
 				<td><a href="New York.html">New York</a></td>
 				<td>Albany</td>
 				<td><img src="./images/new_york.jpg" alt="New York" style="max-width: 50%"></td>
-				<td><a href="">Central Park</a></td>
+				<td><a href="./Central_Park.html">Central Park</a></td>
 				<td>Northeastern</td>
 			</tr>
 			<tr id="r5">
 				<td><a href="Washington.html">Washington</a></td>
 				<td>Olympia</td>
 				<td><img src="./images/washington.jpg" alt="Washington" style="max-width: 50%"></td>
-				<td><a href=""></a></td>
+				<td><a href="./Washington_Park.html">Washington State Park</a></td>
 				<td>Northwestern</td>
 			</tr>
 			<tr id="r6">
 				<td><a href="Wyoming.html">Wyoming</a></td>
 				<td>Cheyenne</td>
 				<td><img src="./images/wyoming.jpg" alt="Wyoming" style="max-width: 50%"></td>
-				<td><a href="">Yellowstone National Park</a></td>
+				<td><a href="./Yellowstone.html">Yellowstone National Park</a></td>
 				<td>Midwestern</td>
 			</tr>
 		</table>
@@ -81,15 +81,16 @@ ADD jQuery <SCRIPT> TO THE <head>. ADD <a id="p1">Previous</a> AND <a id="p2">Ne
 */
 
 $(document).ready(function(){
-	$("#r4").hide();
-	$("#r5").hide();
-	$("#r6").hide();
-	$("#p1").hide();
-	var flag = true;
-	var c = 0;
 
 	table = document.getElementById("table");
 	rows = table.getElementsByTagName("TR");
+
+	$("#"+rows[4].getAttribute('id')).hide();
+	$("#"+rows[5].getAttribute('id')).hide();
+	$("#"+rows[6].getAttribute('id')).hide();
+	$("#p1").hide();
+	var flag = true;
+	var c = 0;
 
 	var c1Sort = false;
 	var c2Sort = false;
@@ -98,12 +99,12 @@ $(document).ready(function(){
 	var c5Sort = false;
 
 	$("#p1").click(function(){
-		$("#r4").hide();
-		$("#r5").hide();
-		$("#r6").hide();
-		$("#r1").show();
-		$("#r2").show();
-		$("#r3").show();
+		$("#"+rows[4].getAttribute('id')).hide();
+		$("#"+rows[5].getAttribute('id')).hide();
+		$("#"+rows[6].getAttribute('id')).hide();
+		$("#"+rows[1].getAttribute('id')).show();
+		$("#"+rows[2].getAttribute('id')).show();
+		$("#"+rows[3].getAttribute('id')).show();
 		$("#p1").hide();
 		$("#p2").show();
 		flag = true;
@@ -111,21 +112,42 @@ $(document).ready(function(){
 	});
 
 	$("#p2").click(function(){
-		$("#r4").show();
-		$("#r5").show();
-		$("#r6").show();
-		$("#r1").hide();
-		$("#r2").hide();
-		$("#r3").hide();
+		$("#"+rows[4].getAttribute('id')).show();
+		$("#"+rows[5].getAttribute('id')).show();
+		$("#"+rows[6].getAttribute('id')).show();
+		$("#"+rows[1].getAttribute('id')).hide();
+		$("#"+rows[2].getAttribute('id')).hide();
+		$("#"+rows[3].getAttribute('id')).hide();
 		$("#p1").show();
 		$("#p2").hide();
 		flag = false;
 		c = 3;
 	});
 
+function showAll(flag){
+	for (var i=1; i<=6; i++){
+		$("#"+rows[i].getAttribute('id')).show();
+	}
+}
+
+function hide(rows,flag){
+	if (flag){
+		$("#"+rows[4].getAttribute('id')).hide();
+		$("#"+rows[5].getAttribute('id')).hide();
+		$("#"+rows[6].getAttribute('id')).hide();
+	}
+	else{
+		$("#"+rows[1].getAttribute('id')).hide();
+		$("#"+rows[2].getAttribute('id')).hide();
+		$("#"+rows[3].getAttribute('id')).hide();
+	}
+}
+
+
 	$("#c1").click(function(){
-		for (var a=1; a<3; a++){
-			for (var i=1+c; i<3+c; i++){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
 				var x = rows[i].getElementsByTagName("TD")[0];
 				var y = rows[i+1].getElementsByTagName("TD")[0];
 				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c1Sort){
@@ -137,11 +159,13 @@ $(document).ready(function(){
 			}
 		}
 		c1Sort = !c1Sort;
+		hide(rows,flag);
 	});
 
 	$("#c2").click(function(){
-		for (var a=1; a<3; a++){
-			for (var i=1+c; i<3+c; i++){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
 				var x = rows[i].getElementsByTagName("TD")[1];
 				var y = rows[i+1].getElementsByTagName("TD")[1];
 				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c2Sort){
@@ -153,11 +177,13 @@ $(document).ready(function(){
 			}
 		}
 		c2Sort = !c2Sort;
+		hide(rows,flag);
 	});
 
 	$("#c3").click(function(){
-		for (var a=1; a<3; a++){
-			for (var i=1+c; i<3+c; i++){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
 				var x = rows[i].getElementsByTagName("TD")[2];
 				var y = rows[i+1].getElementsByTagName("TD")[2];
 				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c3Sort){
@@ -169,11 +195,13 @@ $(document).ready(function(){
 			}
 		}
 		c3Sort = !c3Sort;
+		hide(rows,flag);
 	});
 
 	$("#c4").click(function(){
-		for (var a=1; a<3; a++){
-			for (var i=1+c; i<3+c; i++){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
 				var x = rows[i].getElementsByTagName("TD")[3];
 				var y = rows[i+1].getElementsByTagName("TD")[3];
 				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c4Sort){
@@ -185,11 +213,13 @@ $(document).ready(function(){
 			}
 		}
 		c4Sort = !c4Sort;
+		hide(rows,flag);
 	});
 
 	$("#c5").click(function(){
-		for (var a=1; a<3; a++){
-			for (var i=1+c; i<3+c; i++){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
 				var x = rows[i].getElementsByTagName("TD")[4];
 				var y = rows[i+1].getElementsByTagName("TD")[4];
 				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c5Sort){
@@ -201,6 +231,7 @@ $(document).ready(function(){
 			}
 		}
 		c5Sort = !c5Sort;
+		hide(rows,flag);
 	});
 })
 // -->
