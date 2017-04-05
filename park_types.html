@@ -1,7 +1,8 @@
 <html>
   <head>
     <title>Park Types</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
 
   <style>
@@ -18,29 +19,59 @@
     <div style= "padding-top: 60px">
     <h1 class="headtitle" style="color:#000000">Park Types</h1>
 
-    <table>
-		  <thead>
+    <a id="p1">Previous</a>
+    <a id="p2">Next</a>
+    <table id="table">
+      <tr>
+				<th id="c1">Park Type</th>
+				<th id="c2">Park Example</th>
+				<th id="c3">Number Parks in USA</th>
+				<th id="c4">Definition</th>
+				<th id="c5">Most Popular Park</th>
+			</tr>
+		 <!-- <thead>
 		        <th>Park Type</th>
 		        <th>Park Example</th>
             <th>Number Parks in USA</th>
             <th>Definition</th>
             <th>Most Popular Park</th>
-      </thead>
-		    <tr>
+      </thead>-->
+		    <tr id= "r1">
 		        <td><a href="National_Park.html">National Park</a></td>
             <td><a href="bigbend_park.html">Big Bend National Park</a></td>
             <td>59</td>
             <td>An area of special scenic, historical, or scientific importance set aside and maintained by a national government and in the U.S. by an act of Congress.</td>
             <td>Great Smoky Mountains</td>
 		    </tr>
-		    <tr>
+		    <tr id= "r2">
 		        <td><a href="State_Park.html">State Park</a></td>
             <td><a href="Anza-Borrego_park.html">Anza-Borrego Desert State Park</a></td>
             <td>10,234</td>
             <td>An area of land that is owned and protected by a U.S. state because of its natural beauty or its importance in history.</td>
             <td>Niagara Falls State Park</td>
 		    </tr>
-        <tr>
+        <tr id= "r3">
+		        <td><a href="Preserve.html">National Preserve</a></td>
+            <td><a href="Timucuan_park.html">Timucuan Preserve</a></td>
+            <td>20</td>
+            <td>A protected area designated by the United States Congress that has characteristics normally associated with U.S. National Parks but where certain natural resource-extractive activities such as fishing, hunting, mining, and oil/gas exploration and extraction are permitted.</td>
+            <td>Mojave National Preserve</td>
+		    </tr>
+        <tr id= "r4">
+		        <td><a href="Preserve.html">National Preserve</a></td>
+            <td><a href="Timucuan_park.html">Timucuan Preserve</a></td>
+            <td>20</td>
+            <td>A protected area designated by the United States Congress that has characteristics normally associated with U.S. National Parks but where certain natural resource-extractive activities such as fishing, hunting, mining, and oil/gas exploration and extraction are permitted.</td>
+            <td>Mojave National Preserve</td>
+		    </tr>
+        <tr id= "r5">
+		        <td><a href="Preserve.html">National Preserve</a></td>
+            <td><a href="Timucuan_park.html">Timucuan Preserve</a></td>
+            <td>20</td>
+            <td>A protected area designated by the United States Congress that has characteristics normally associated with U.S. National Parks but where certain natural resource-extractive activities such as fishing, hunting, mining, and oil/gas exploration and extraction are permitted.</td>
+            <td>Mojave National Preserve</td>
+		    </tr>
+        <tr id= "r6">
 		        <td><a href="Preserve.html">National Preserve</a></td>
             <td><a href="Timucuan_park.html">Timucuan Preserve</a></td>
             <td>20</td>
@@ -48,6 +79,184 @@
             <td>Mojave National Preserve</td>
 		    </tr>
       </table>
-    </body>
+      <script>
+      <!--
 
+      ///////////////////////////INSTRUCTIONS/////////////////////////////
+      /*
+      ADD jQuery <SCRIPT> TO THE <head>. ADD <a id="p1">Previous</a> AND <a id="p2">Next</a> BEFORE <table>. THESE WILL BE YOUR BUTTONS TO SWITCH THROUGH TWO PAGES WITH THREE INSTANCES EACH. FOR EACH <tr> (THERE SHOULD BE 6 TOTAL), ADD IDs "r1" "r2" "r3" "r4" "r5" "r6" RESPECTIVELY.
+      */
+
+      $(document).ready(function(){
+      	$("#r4").hide();
+      	$("#r5").hide();
+      	$("#r6").hide();
+      	$("#p1").hide();
+      	var flag = true;
+      	var c = 0;
+
+      	table = document.getElementById("table");
+      	rows = table.getElementsByTagName("TR");
+
+      	var c1Sort = false;
+      	var c2Sort = false;
+      	var c3Sort = false;
+      	var c4Sort = false;
+      	var c5Sort = false;
+
+      	$("#p1").click(function(){
+      		$("#r4").hide();
+      		$("#r5").hide();
+      		$("#r6").hide();
+      		$("#r1").show();
+      		$("#r2").show();
+      		$("#r3").show();
+      		$("#p1").hide();
+      		$("#p2").show();
+      		flag = true;
+      		c = 0;
+      	});
+
+      	$("#p2").click(function(){
+      		$("#r4").show();
+      		$("#r5").show();
+      		$("#r6").show();
+      		$("#r1").hide();
+      		$("#r2").hide();
+      		$("#r3").hide();
+      		$("#p1").show();
+      		$("#p2").hide();
+      		flag = false;
+      		c = 3;
+      	});
+
+        //each sort variable decides what kind of sort to do and whether it is sorted: c1Sort=false = descending; true = ascending
+      	$("#c1").click(function(){
+          var needSwitch1=true;
+      		while (needSwitch1){
+            //remains false if everything is sorted so loop exits
+            needSwitch1=false;
+      			for (var i=1; i<(rows.length-1); i++){
+              //reads 1st row (x) and second row (y)
+      				var x = rows[i].getElementsByTagName("TD")[0];
+      				var y = rows[i+1].getElementsByTagName("TD")[0];
+              //ascending sort
+      				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c1Sort){
+      					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+                needSwitch1=true;
+      				}
+              //descending sort
+      				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c1Sort){
+      					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+                needSwitch1=true;
+      				}
+      			}
+      		}
+          //toggles the sorting type
+      		c1Sort = !c1Sort;
+      	});
+
+      	$("#c2").click(function(){
+          var needSwitch2=true;
+          while (needSwitch2){
+            //remains false if everything is sorted so loop exits
+            needSwitch2=false;
+            for (var i=1; i<(rows.length-1); i++){
+              //reads 1st row (x) and second row (y)
+              var x = rows[i].getElementsByTagName("TD")[1];
+              var y = rows[i+1].getElementsByTagName("TD")[1];
+              //ascending sort
+              if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c2Sort){
+                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+                needSwitch2=true;
+              }
+              //descending sort
+              if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c2Sort){
+                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+                needSwitch2=true;
+              }
+            }
+          }
+          //toggles the sorting type
+          c2Sort = !c2Sort;
+      	});
+
+      	$("#c3").click(function(){
+          var needSwitch3=true;
+          while (needSwitch3){
+            //remains false if everything is sorted so loop exits
+            needSwitch3=false;
+            for (var i=1; i<(rows.length-1); i++){
+              //reads 1st row (x) and second row (y)
+              var x = rows[i].getElementsByTagName("TD")[2];
+              var y = rows[i+1].getElementsByTagName("TD")[2];
+              //ascending sort
+              if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c3Sort){
+                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+                needSwitch3=true;
+              }
+              //descending sort
+              if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c3Sort){
+                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+                needSwitch3=true;
+              }
+            }
+          }
+          //toggles the sorting type
+          c3Sort = !c3Sort;
+      	});
+
+      	$("#c4").click(function(){
+          var needSwitch4=true;
+          while (needSwitch4){
+            //remains false if everything is sorted so loop exits
+            needSwitch4=false;
+            for (var i=1; i<(rows.length-1); i++){
+              //reads 1st row (x) and second row (y)
+              var x = rows[i].getElementsByTagName("TD")[3];
+              var y = rows[i+1].getElementsByTagName("TD")[3];
+              //ascending sort
+              if ((x.innerHTML) > (y.innerHTML) && !c4Sort){
+                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+                needSwitch4=true;
+              }
+              //descending sort
+              if ((x.innerHTML)< (y.innerHTML) && c4Sort){
+                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+                needSwitch4=true;
+              }
+            }
+          }
+          //toggles the sorting type
+          c4Sort = !c4Sort;
+      	});
+
+      	$("#c5").click(function(){
+          var needSwitch5=true;
+          while (needSwitch5){
+            //remains false if everything is sorted so loop exits
+            needSwitch5=false;
+            for (var i=1; i<(rows.length-1); i++){
+              //reads 1st row (x) and second row (y)
+              var x = rows[i].getElementsByTagName("TD")[4];
+              var y = rows[i+1].getElementsByTagName("TD")[4];
+              //ascending sort
+              if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c5Sort){
+                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+                needSwitch5=true;
+              }
+              //descending sort
+              if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c5Sort){
+                rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+                needSwitch5=true;
+              }
+            }
+          }
+          //toggles the sorting type
+          c5Sort = !c5Sort;
+      	});
+      })
+      // -->
+      </script>
+    </body>
 </html>
