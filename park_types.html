@@ -9,7 +9,7 @@
   <style>
     tr:nth-child(even){background-color: #f2f2f2}
   </style>
-  <body>
+  <body class="parktypes">
     <ul class="nav">
       <li><a href="index.html">USA Parks</a></li>
       <li><a href="about.html">About Us</a></li>
@@ -17,12 +17,14 @@
       <li><a href="parks_model.html">Parks</a></li>
       <li><a class="active" href="park_types.html">Park Types</a></li>
     </ul>
-    <div style= "padding-top: 60px">
+    <!-- remove class if don't want transparent background-->
+    <div class = "transparent" style= "padding-top: 60px;background-color: rgba(229, 229, 222,0.55)">
     <h1 class="headtitle" style="color:#000000">Park Types</h1>
 
-    <a id="p1">Previous</a>
-    <a id="p2">Next</a>
-    <table id="table">
+    <a id="p1" style = "color: black">Previous</a>
+    <a id="p2" style = "color: black">Next</a>
+    <!-- added table-layout: fixed to not allow the table column widths to change upon different sortings -->
+    <table id="table" style="background-color: white; table-layout: fixed">
       <div>
       <tr>
         <th><button id="c1" type="button" class="btn btn-default" style = "width:100%">Park Type</button></th>

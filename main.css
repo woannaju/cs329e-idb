@@ -34,6 +34,11 @@ body{
 	background-position:left top;
 	background-size: 100%;
 }
+.parktypes{
+	background-image: url("./images/pk_type_bg.jpg");
+	background-position:left top;
+	background-size: 100%;
+}
 .states{
 	background-image: url("./images/st_bg.jpg");
 	background-position: left top;
@@ -67,6 +72,10 @@ p{
 table{
 	width: 100%
 }
+/*makes it so that the 4th column ahs a fixed larger width*/
+table tr th:nth-child(4){
+       width: 60%;
+     }
 th,td{
 	text-align: left;
 	padding: 15px;
