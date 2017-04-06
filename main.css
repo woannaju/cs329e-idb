@@ -23,7 +23,7 @@ body{
 	height: 100%;
 	margin-left:auto;
 	margin-right:auto;
-	padding: 0px;
+
 }
 .frontpage{
 	background-image: url("./images/fp_bg.jpg");
@@ -91,6 +91,10 @@ body{
 
 .table {
   width: 80%;
+}
+/*makes it so that the 4th column has a fixed larger width*/
+.table tr th:nth-child(4){
+  width: 36%;
 }
 
 .definition {
