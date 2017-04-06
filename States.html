@@ -6,11 +6,12 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
+
 	<style>
 		tr:nth-child(even){background-color: #f2f2f2}
 	</style>
 
-	<body>
+	<body class="frontpage">
 
 		<!-- NAV BAR (BOOTSTRAPPED) -->
     <nav class="navbar navbar-default">
@@ -25,19 +26,29 @@
       </ul>
     </nav>
 
-		<div style= "padding-top: 60px">
+		<!-- TITLE -->
+    <div class = "container" style= "padding-top: 0px">
+      <h1 class="headtitle" style="color:#000000">
+        States
+      </h1>
+    </div>
 
-		<h1 class="headtitle" style="color:#000000">States</h1>
-		<a id="p1">Previous</a>
-		<a id="p2">Next</a>
-		<table id="table">
-			<tr>
-				<th id="c1">State</th>
-				<th id="c2">Capital</th>
-				<th id="c3">Flag</th>
-				<th id="c4">Well-Known Park</th>
-				<th id="c5">Region</th>
-			</tr>
+		<!-- PAGINATION BUTTONS -->
+		<a id="p1" style = "color: black">Previous</a>
+    <a id="p2" style = "color: black">Next</a>
+
+		<!-- TABLE -->
+		<table id="table" class = "table container" style="background-color: white; table-layout: fixed">
+			<div>
+        <tr>
+          <th><button id="c1" type="button" class="btn btn-default" style = "width:100%">State</button></th>
+          <th><button id="c2" type="button" class="btn btn-default" style = "width:100%">Capital</button></th>
+          <th><button id="c3" type="button" class="btn btn-default" style = "width:100%">Flag</button></th>
+          <th><button id="c4" type="button" class="btn btn-default" style = "width:100%">Well-Known Park</button></th>
+          <th><button id="c5" type="button" class="btn btn-default" style = "width:100%">Region</button></th>
+			  </tr>
+      </div>
+
 			<tr id="r1">
 				<td><a href="Texas.html">Texas</a></td>
 				<td>Austin</td>
@@ -81,7 +92,7 @@
 				<td>Midwestern</td>
 			</tr>
 		</table>
-<script>
+		<script>
 <!--
 
 ///////////////////////////INSTRUCTIONS/////////////////////////////
@@ -244,6 +255,6 @@ function hide(rows,flag){
 	});
 })
 // -->
-</script>
+		</script>
 	</body>
 </html>

@@ -10,7 +10,7 @@
     tr:nth-child(even){background-color: #f2f2f2}
   </style>
 
-  <body>
+  <body class="frontpage">
 
     <!-- NAV BAR (BOOTSTRAPPED) -->
     <nav class="navbar navbar-default">
@@ -25,39 +25,51 @@
       </ul>
     </nav>
 
-    <div style= "padding-top: 60px">
-    <h1 class="headtitle" style="color:#000000">Parks</h1>
+    <!-- TITLE -->
+    <div class = "container" style= "padding-top: 0px">
+      <h1 class="headtitle" style="color:#000000">
+        Parks
+      </h1>
+    </div>
 
-    <table>
-		  <thead>
-		      <th>Park Name</th>
-		        <th>State</th>
-            <th>Region</th>
-            <th>Park Type</th>
-            <th>Area in Squared Miles</th>
-      </thead>
-		    <tr>
-		        <td><a href="bigbend_park.html">Big Bend National Park</a></td>
-            <td><a href="Texas.html">Texas</a></td>
-            <td>Far West Texas</td>
-            <td><a href="National_Park.html">National Park</a></td>
-            <td>1,252</td>
-		    </tr>
-		    <tr>
-		        <td><a href="Anza-Borrego_park.html">Anza-Borrego Desert State Park</a></td>
-            <td><a href="California.html">California</a></td>
-            <td>San Diego County</td>
-            <td><a href="State_Park.html">State Park</a></td>
-            <td>915</td>
-		    </tr>
+    <!-- PAGINATION BUTTONS -->
+    <a id="p1" style = "color: black">Previous</a>
+    <a id="p2" style = "color: black">Next</a>
+
+    <!-- TABLE -->
+    <table id="table" class = "table container" style="background-color: white; table-layout: fixed">
+      <div>
         <tr>
-		        <td><a href="Timucuan_park.html">Timucuan Preserve</a></td>
-            <td><a href="Florida.html">Florida</a></td>
-            <td>Jacksonville</td>
-            <td><a href="Preserve.html">National Preserve</a></td>
-            <td>72</td>
-		    </tr>
-      </table>
-    </body>
+          <th><button id="c1" type="button" class="btn btn-default" style = "width:100%">Park Name</button></th>
+          <th><button id="c2" type="button" class="btn btn-default" style = "width:100%">State</button></th>
+          <th><button id="c3" type="button" class="btn btn-default" style = "width:100%">Region</button></th>
+          <th><button id="c4" type="button" class="btn btn-default" style = "width:100%">Park Type</button></th>
+          <th><button id="c5" type="button" class="btn btn-default" style = "width:100%">Area in Square Miles</button></th>
+			  </tr>
+      </div>
 
+		  <tr id= "r1">
+        <td><a href="bigbend_park.html">Big Bend National Park</a></td>
+        <td><a href="Texas.html">Texas</a></td>
+        <td>Far West Texas</td>
+        <td><a href="National_Park.html">National Park</a></td>
+        <td>1,252</td>
+	    </tr>
+	    <tr id= "r2">
+		    <td><a href="Anza-Borrego_park.html">Anza-Borrego Desert State Park</a></td>
+        <td><a href="California.html">California</a></td>
+        <td>San Diego County</td>
+        <td><a href="State_Park.html">State Park</a></td>
+        <td>915</td>
+	    </tr>
+      <tr id= "r3">
+		    <td><a href="Timucuan_park.html">Timucuan Preserve</a></td>
+        <td><a href="Florida.html">Florida</a></td>
+        <td>Jacksonville</td>
+        <td><a href="Preserve.html">National Preserve</a></td>
+        <td>72</td>
+		  </tr>
+    </table>
+
+  </body>
 </html>

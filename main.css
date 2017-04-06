@@ -8,6 +8,7 @@
 
 }
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 body{
 	background-color: none;
 	color: #333333;
@@ -15,9 +16,10 @@ body{
 	padding: 0;
 	margin: 0;
 }
+
 .transparent{
-	background-color: rgba(229, 229, 222,0.25);
-	width:85%;
+	background-color: rgba(229, 229, 222,0.2);
+	width:100%;
 	height: 100%;
 	margin-left:auto;
 	margin-right:auto;
@@ -85,15 +87,20 @@ body{
   padding: 10px
 }
 
-h1,title{
-	font-family: 'Bebas Neue', sans-serif;
-	font-size: 50px;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-	vertical-align: middle;
+.table {
+  width: 80%;
 }
-h2,th{
+
+.definition {
+  font-size: 0.8em;
+}
+
+h1{
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 1.65em;
+
+}
+h2{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5em;
 }
@@ -101,7 +108,7 @@ h3{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.35em;
 }
-h4,td{
+h4{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.12em;
 }
@@ -109,38 +116,6 @@ p{
 	font-family: 'Open Sans', sans-serif;
 	font-size: .75em;
 	width: 100%;
-}
-
-table{
-	width: 100%
-}
-/*makes it so that the 4th column ahs a fixed larger width*/
-table tr th:nth-child(4){
-       width: 60%;
-     }
-th,td{
-	text-align: left;
-	padding: 15px;
-	border-right: 0px;
-}
-
-div h3{
-	display: inline-block;
-	margin-right: 6%;
-	margin-left: 10.85%;
-	left: 10.85%;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding-top: .5%;
-	padding-left: 1.075%;
-	padding-right: 1.075%;
-	color:#E5F2FF;
-	background-color: #5E5E5E;
-	opacity: 0.8;
-	width: 20%;
-	text-align: center;
-	margin: 0;
-
 }
 
 iframe{
