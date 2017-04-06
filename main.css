@@ -19,11 +19,11 @@ body{
 
 .transparent{
 	background-color: rgba(229, 229, 222,0.2);
-	width:100%;
+	width:85%;
 	height: 100%;
 	margin-left:auto;
 	margin-right:auto;
-	/*padding: 15px;*/
+	padding: 0px;
 }
 .frontpage{
 	background-image: url("./images/fp_bg.jpg");
