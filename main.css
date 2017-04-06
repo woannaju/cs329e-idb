@@ -41,6 +41,11 @@ body{
 	background-position:left top;
 	background-size: 100%;
 }
+.park{
+	background-image: url("./images/parks_bg.jpg");
+	background-position:left top;
+	background-size: 100%;
+}
 .states{
 	background-image: url("./images/st_bg.jpg");
 	background-position: left top;
