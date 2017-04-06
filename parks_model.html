@@ -91,6 +91,169 @@
         <td>3,471</td>
 		  </tr>
     </table>
+    <script>
+<!--
 
+///////////////////////////INSTRUCTIONS/////////////////////////////
+/*
+ADD jQuery <SCRIPT> TO THE <head>. ADD <a id="p1">Previous</a> AND <a id="p2">Next</a> BEFORE <table>. THESE WILL BE YOUR BUTTONS TO SWITCH THROUGH TWO PAGES WITH THREE INSTANCES EACH. FOR EACH <tr> (THERE SHOULD BE 6 TOTAL), ADD IDs "r1" "r2" "r3" "r4" "r5" "r6" RESPECTIVELY. FOR EACH <th> (THERE SHOULD BE 6 TOTAL), ADD IDs "c1" "c2" "c3" "c4" "c5" "c6" RESPECTIVELY.
+*/
+
+$(document).ready(function(){
+
+	table = document.getElementById("table");
+	rows = table.getElementsByTagName("TR");
+
+	$("#"+rows[4].getAttribute('id')).hide();
+	$("#"+rows[5].getAttribute('id')).hide();
+	$("#"+rows[6].getAttribute('id')).hide();
+	$("#p1").hide();
+	var flag = true;
+	var c = 0;
+
+	var c1Sort = false;
+	var c2Sort = false;
+	var c3Sort = false;
+	var c4Sort = false;
+	var c5Sort = false;
+
+	$("#p1").click(function(){
+		$("#"+rows[4].getAttribute('id')).hide();
+		$("#"+rows[5].getAttribute('id')).hide();
+		$("#"+rows[6].getAttribute('id')).hide();
+		$("#"+rows[1].getAttribute('id')).show();
+		$("#"+rows[2].getAttribute('id')).show();
+		$("#"+rows[3].getAttribute('id')).show();
+		$("#p1").hide();
+		$("#p2").show();
+		flag = true;
+		c = 0;
+	});
+
+	$("#p2").click(function(){
+		$("#"+rows[4].getAttribute('id')).show();
+		$("#"+rows[5].getAttribute('id')).show();
+		$("#"+rows[6].getAttribute('id')).show();
+		$("#"+rows[1].getAttribute('id')).hide();
+		$("#"+rows[2].getAttribute('id')).hide();
+		$("#"+rows[3].getAttribute('id')).hide();
+		$("#p1").show();
+		$("#p2").hide();
+		flag = false;
+		c = 3;
+	});
+
+function showAll(flag){
+	for (var i=1; i<=6; i++){
+		$("#"+rows[i].getAttribute('id')).show();
+	}
+}
+
+function hide(rows,flag){
+	if (flag){
+		$("#"+rows[4].getAttribute('id')).hide();
+		$("#"+rows[5].getAttribute('id')).hide();
+		$("#"+rows[6].getAttribute('id')).hide();
+	}
+	else{
+		$("#"+rows[1].getAttribute('id')).hide();
+		$("#"+rows[2].getAttribute('id')).hide();
+		$("#"+rows[3].getAttribute('id')).hide();
+	}
+}
+
+
+	$("#c1").click(function(){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
+				var x = rows[i].getElementsByTagName("TD")[0];
+				var y = rows[i+1].getElementsByTagName("TD")[0];
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c1Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c1Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+			}
+		}
+		c1Sort = !c1Sort;
+		hide(rows,flag);
+	});
+
+	$("#c2").click(function(){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
+				var x = rows[i].getElementsByTagName("TD")[1];
+				var y = rows[i+1].getElementsByTagName("TD")[1];
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c2Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c2Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+			}
+		}
+		c2Sort = !c2Sort;
+		hide(rows,flag);
+	});
+
+	$("#c3").click(function(){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
+				var x = rows[i].getElementsByTagName("TD")[2];
+				var y = rows[i+1].getElementsByTagName("TD")[2];
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c3Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c3Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+			}
+		}
+		c3Sort = !c3Sort;
+		hide(rows,flag);
+	});
+
+	$("#c4").click(function(){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
+				var x = rows[i].getElementsByTagName("TD")[3];
+				var y = rows[i+1].getElementsByTagName("TD")[3];
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c4Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c4Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+			}
+		}
+		c4Sort = !c4Sort;
+		hide(rows,flag);
+	});
+
+	$("#c5").click(function(){
+		showAll(flag);
+		for (var a=1; a<10; a++){
+			for (var i=1; i<6; i++){
+				var x = rows[i].getElementsByTagName("TD")[4];
+				var y = rows[i+1].getElementsByTagName("TD")[4];
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() && !c5Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase() && c5Sort){
+					rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+				}
+			}
+		}
+		c5Sort = !c5Sort;
+		hide(rows,flag);
+	});
+})
+// -->
+		</script>
   </body>
 </html>
