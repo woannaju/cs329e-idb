@@ -1,0 +1,956 @@
+commit 9e9f16a20a792eb5c3ec7b64a1dc4cf49259139e
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Apr 6 20:42:44 2017 -0500
+
+    added links to instances from the park type pages
+
+commit 1aff44c0b6e4c4490f195933e0860b6180a8088c
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 20:09:00 2017 -0500
+
+    minor navbar css edit
+
+commit 9f216a16e4bdf340f5363dac8b58a5bf77454099
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Thu Apr 6 20:07:54 2017 -0500
+
+    Added number of commits and issue for each member
+    
+    Added number of commits and issue for each member
+
+commit 993d70709e12bdac420a9b04ce95c8564b5c1ced
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 19:49:01 2017 -0500
+
+    edited Washington
+
+commit 7664afa88f2c76cbdc1dafead4e9f58baef9a49b
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 19:47:48 2017 -0500
+
+    added internal links to park instances
+
+commit f55f5281e315e6cd0aac4c4feca658c14ac7894e
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 19:42:46 2017 -0500
+
+    updated Anza Park
+
+commit 8e427f1ae0fbafa6f54d5075409c4837f8a3da39
+Author: wcv223 <cody.villarreal07@gmail.com>
+Date:   Thu Apr 6 19:29:46 2017 -0500
+
+    Linked Park pages
+    
+    Added the state and park type to each park page
+
+commit 55b571a46ccfcbc113efbd616899fb031e1eae8c
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Thu Apr 6 19:20:25 2017 -0500
+
+    Updated New York page
+    
+    Added links to connect New York page
+
+commit f138dfac5e69e826783a35695e83a9fa27bf09bf
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 19:13:20 2017 -0500
+
+    updated Park Type nav
+
+commit 4f4ea9ad013778fc20a2c5df9020ac7fafeb905c
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 19:11:49 2017 -0500
+
+    updated States nav
+
+commit 6f6096695411021ab646972c6e3630b04afcb5ed
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 19:08:47 2017 -0500
+
+    updated park model
+
+commit 12fb88c268d22a51962fe51e754c442c62068d2a
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Thu Apr 6 19:00:18 2017 -0500
+
+    Added links to Texas and Wyoming pages to connect to other pages
+    
+    Added links to Texas and Wyoming pages to connect to other pages
+
+commit 5e4dc388773a09ebb5e71a0773257725d53d4456
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 18:56:51 2017 -0500
+
+    updated park sizes
+
+commit e7749c4730f1e3c37ecc1fc387334b999dcc45a1
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 18:56:02 2017 -0500
+
+    updated park names
+
+commit 20fdf2dfaaf67149a463861d6f11a30d345794a6
+Author: wcv223 <cody.villarreal07@gmail.com>
+Date:   Thu Apr 6 18:49:53 2017 -0500
+
+    Updated park name
+    
+    Changed from Washington State Park to Deception Pass State Park
+
+commit 43f35f45551ad37525f4212250fcfee4e1a9b34d
+Author: wcv223 <cody.villarreal07@gmail.com>
+Date:   Thu Apr 6 18:45:19 2017 -0500
+
+    Updated all parks pages
+    
+    All park pages now look the same and Central park, Deception Pass, and
+    yellow stone have been brought up to date
+
+commit e649830df81ad1d150db03e0c200789ea18c7618
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 17:15:09 2017 -0500
+
+    updated nav bar for Park instances
+
+commit 5dc294af7a0ca15288bf0e721104a64257f234e2
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Thu Apr 6 16:18:54 2017 -0500
+
+    Added links to connect pages to California, Florida, Washington pages
+    
+    Added links to connect pages to California, Florida, Washington pages
+
+commit 8dc218073abb4adbdc2b350f992d863c14ce9c13
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Thu Apr 6 15:47:22 2017 -0500
+
+    fixed column buttons
+
+commit de51955b1efcca2169f171f022bee7b5613d4253
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Thu Apr 6 15:34:29 2017 -0500
+
+    added more background images jpg
+
+commit 6e034aad254a6e9b11d3d99570ec2a1b75ef7026
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Thu Apr 6 15:29:21 2017 -0500
+
+    changed background images
+
+commit 93e759c931f7cc249a967191f4b914549568182e
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Apr 6 15:25:35 2017 -0500
+
+    added pagination buttons
+
+commit 2390194de4314dfba0c0dc9d9b70843a9fcc68af
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Apr 6 14:28:19 2017 -0500
+
+    updated monument page
+
+commit ee81d9dfc640791ccbfe182b4e79b0d083a6cd98
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Thu Apr 6 14:19:04 2017 -0500
+
+    fixed transparent background for all pages
+
+commit a62f706b85d187b5a51e2024a026fa57e242b7f0
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Thu Apr 6 14:14:29 2017 -0500
+
+    joanna's push copy
+
+commit 1e92b50deaf8baf6062a4609c63916b296e2915d
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Thu Apr 6 14:03:50 2017 -0500
+
+    fixed transparent background for park types
+
+commit 6cdcb01c0cb1233a2a90ebc2afc3ffeffe644da6
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Thu Apr 6 12:09:55 2017 -0500
+
+    Updated links in state file to connect to parks pages
+
+commit 78047463d87af2ddfca346d6fbdc03330eb381b7
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 11:40:52 2017 -0500
+
+    removed commas in parks model area attribute
+
+commit f26c78984d35008cae39370ddd258f1bc52c65e1
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 11:29:48 2017 -0500
+
+    formatted Park Type instance titles
+
+commit 63c8d9c7578f599ada9ee202835b282f6b4c0718
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 11:25:18 2017 -0500
+
+    formatted State instance titles
+
+commit e57b7c36e6806623f4c18ed06b36b07e7983cfe0
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Apr 6 10:34:11 2017 -0500
+
+    updated national monument page
+
+commit 7b3122fd042b83349330c8de43f5ca7d90fc348d
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 05:04:29 2017 -0500
+
+    fixed container class and implemented it into each model table
+
+commit c64807b936a4b5840eda64f39bc01056302a1689
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 04:49:22 2017 -0500
+
+    minor formatting on state flags in state model
+
+commit 31d299eca257fee2467ab886a3e48ffbc1cf6825
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 04:13:17 2017 -0500
+
+    added pagination and sorting to parks model
+
+commit 1bd02ab613a10d150c2c2e4a1be30c1083ae65c4
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 04:10:34 2017 -0500
+
+    added 3 more park instances
+
+commit 04662f5502c2db808d19a2e7f6fc747bef6ec24d
+Merge: 298a30b 74ab699
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 03:17:59 2017 -0500
+
+    merging my local dev branchMerge branch 'devbranch'
+
+commit 298a30b4dcefd3acd60035c58e8b63076dfd9bfb
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 03:17:29 2017 -0500
+
+    bootstrapped tables in each model
+
+commit 74ab699646f4c6fe23b7eb63689a930652eb84f5
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Apr 6 02:31:04 2017 -0500
+
+    updated historical trail page
+
+commit 979d36a714f8ec458ab1e2ce4ff3751d24f3bcff
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 01:38:51 2017 -0500
+
+    updated stats/tools format
+
+commit 4c4c359ad9e35656a0e5f034ec9182720237b015
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 01:31:27 2017 -0500
+
+    boostrapped all instance nav bars
+
+commit 4fc951c6162430407397edc92c2fc353ec46cb60
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 01:23:38 2017 -0500
+
+    bootstrapped about page and cleaned up main.css
+
+commit 31e96ba6b3fd58ded196a3a9f5dcbbab51b01f21
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Apr 6 01:14:23 2017 -0500
+
+    bootstrapped the nav bar
+
+commit f52ba0fd640684aea4e72081ee72697747837e33
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Apr 6 00:56:44 2017 -0500
+
+    added links to other pages from states page
+
+commit 46371c4c6517408b1dbf8201f9650e505f9c881e
+Author: woannaju <jwu@utexas.edu>
+Date:   Wed Apr 5 23:39:13 2017 -0500
+
+    updated state parks page
+
+commit 37a37a1b1430d55aa5347af709e12d305c1a5ac8
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Wed Apr 5 19:13:42 2017 -0500
+
+    added park types image
+
+commit 7b309f0830f79960af59811cd7b5fb71512e3273
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Wed Apr 5 19:10:57 2017 -0500
+
+    optional sort indicator code-line 176
+
+commit 4bd6032c1739d009cc9dbe10094d98b321b30466
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Wed Apr 5 18:41:50 2017 -0500
+
+    Make park types pages nice and fixed column width
+
+commit a7e7816c0d4cfbaf158c177742e7cea75f807a39
+Author: woannaju <jwu@utexas.edu>
+Date:   Wed Apr 5 17:17:47 2017 -0500
+
+    updated park types
+
+commit e954bf8100110be61e35f93d19c8e696b9080538
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Wed Apr 5 16:55:02 2017 -0500
+
+    Made table headers a button
+
+commit 884fd51660bd272f0e64d8c0a759951fe7b8455c
+Author: woannaju <jwu@utexas.edu>
+Date:   Wed Apr 5 16:04:07 2017 -0500
+
+    pushing bootstrap
+
+commit 55352e64ce4f23b14ea9b06c4ef2483427bef9aa
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Wed Apr 5 12:28:35 2017 -0500
+
+    Fixed Program for Park Type Model Page
+
+commit d8fce6d8b1614597043cf46b218765e406a64c68
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Wed Apr 5 09:48:33 2017 -0500
+
+    Updated Instructions to Program
+
+commit a232aa836378449c4ab7879d6e66541ee2a6f8a3
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Wed Apr 5 00:03:12 2017 -0500
+
+    Fixed Sorting Method
+
+commit 7d275ed9131c033bd8d8cb0c62b7011d5cd740b8
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Tue Apr 4 23:08:48 2017 -0500
+
+    Fixed numberical sorting. Need to fix change text
+
+commit 622fd1a3e439a4f37740529b6a61e0779a0b6479
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Tue Apr 4 22:10:57 2017 -0500
+
+    fixed sorting table for park_types
+
+commit b5d86e1595a8ca1c5ed7683c2ab784f89a6fa95a
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Tue Apr 4 18:13:00 2017 -0500
+
+    Adjusted Image Size
+
+commit 1ed63206a50c0d82b429a17557553d8b3c07e160
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Tue Apr 4 18:04:43 2017 -0500
+
+    Added Temporary Parks for New State Instances
+
+commit 3c21d07593106f21a7db29eae55489f0c8a526df
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Tue Apr 4 18:01:29 2017 -0500
+
+    Pagination and Sorting
+    
+    Implemented pagination and sorting to state model page.
+
+commit b9e8ac84ef66f80884a36171b51cbec069f11aef
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Tue Apr 4 17:18:28 2017 -0500
+
+    fixed extra quotation marks
+
+commit bcda565a615e846b0e832984c111e405ef36fa62
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Mon Apr 3 11:47:46 2017 -0500
+
+    Font Issue
+
+commit 0c24c181d6d99edf122ab0de5407a74c8685d828
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Mon Apr 3 11:46:07 2017 -0500
+
+    Fixing New York Page
+
+commit ba8e620e9868cfd9980a9c296f362dba2c9c39ea
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Mon Apr 3 11:45:26 2017 -0500
+
+    Updated states page
+    
+    Added Wyoming to the states page
+
+commit 36fd46d50a41bd855656e27a244c01e47da75635
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Mon Apr 3 11:40:43 2017 -0500
+
+    Moving Images
+
+commit 2d2dec5b91e93a1ba5c8c3963fe95810cc92c374
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Mon Apr 3 11:39:05 2017 -0500
+
+    Adding Wyoming Page
+
+commit 71ce67a28905f11fb3ed3f5c18deb7d01d93a7ea
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Mon Apr 3 11:38:23 2017 -0500
+
+    Adding Wyoming Images
+
+commit 493bcc34b24534f46412831b6667e0c4085dde5f
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Mon Apr 3 11:38:14 2017 -0500
+
+    Updated Washington page
+    
+    Made changes to Washington page
+
+commit 0918ed4e0b5e9276e4e8b64e847864319a04a1a4
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Mon Apr 3 11:36:46 2017 -0500
+
+    Updated States.html
+    
+    Added Washington and New York
+
+commit 769e9ce13f259442577f868324dbf845007281eb
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Mon Apr 3 11:28:23 2017 -0500
+
+    Added Washington page
+    
+    Added Washington.html page under states model
+
+commit a4ca5cd401ba98ae7cff73b8f1d1b529805dc3bd
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Mon Apr 3 11:27:27 2017 -0500
+
+    Added Washington images
+    
+    Added images for Washington under the state model
+
+commit dde948fa6014fe8285aaf66df5f6293df1473ed5
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Mon Apr 3 11:25:35 2017 -0500
+
+    Adding New York Page
+
+commit 568a6460bced1053068d16d83d86e204222422b3
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Mon Apr 3 11:24:43 2017 -0500
+
+    Adding New York Images
+
+commit 10be4280ab5dd6235f77b5b5182ed43b74b148c0
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Fri Mar 31 16:06:11 2017 -0500
+
+    fixed bg name
+
+commit f0508d42e6fc735b72afa7a24a5a2f21e83ad63a
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Mar 23 21:48:03 2017 -0500
+
+    log and SHA
+
+commit f8cfe92a0124e1cdcf599e6cb6b50fd9ad04f373
+Author: wcv223 <cody.villarreal07@gmail.com>
+Date:   Thu Mar 23 21:44:23 2017 -0500
+
+    changed name of table
+    
+    changed class name
+
+commit 431270bffa7ae1fb8d691391051e68780367c57c
+Author: wcv223 <cody.villarreal07@gmail.com>
+Date:   Thu Mar 23 21:41:11 2017 -0500
+
+    adjustments to national park
+    
+    deleted part of the info
+
+commit daa975e5102881933eba81dd80da9ee6372160b1
+Merge: c030fc3 e5ea68d
+Author: wcv223 <cody.villarreal07@gmail.com>
+Date:   Thu Mar 23 21:38:26 2017 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit e5ea68d7ee3be343d17a904fa68ee5dca5cd7af7
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Thu Mar 23 21:38:02 2017 -0500
+
+    changed nav bar to make consistent
+
+commit c030fc3575000a990cb52946e389d09738165395
+Merge: fe2051f 45aeafc
+Author: wcv223 <cody.villarreal07@gmail.com>
+Date:   Thu Mar 23 21:37:49 2017 -0500
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       National_Park.html
+
+commit fe2051fc3188fe064b61db6f556fcaa3ced6aa84
+Author: wcv223 <cody.villarreal07@gmail.com>
+Date:   Thu Mar 23 21:36:41 2017 -0500
+
+    Basic info for national park
+    
+    added p1 and p2 and a table of head of department
+
+commit 45aeafc3385f5d45268476b7ab218a9d4537a87b
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Mar 23 21:35:21 2017 -0500
+
+    added title
+
+commit 0286687c1621b932952991b6a3234a9450cbc71b
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Thu Mar 23 21:34:35 2017 -0500
+
+    change commit number
+
+commit 56b98511d7310b656a1afbb48105e4f60eceeb78
+Merge: 5257a15 fe7dce8
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Mar 23 21:31:05 2017 -0500
+
+    merging my branch Merge branch 'devbranch'
+
+commit 5257a151fa523260ef59b63408a33c1650138fa0
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Mar 23 21:30:42 2017 -0500
+
+    updated park type instances
+
+commit fe7dce8c5880660a1ee04ecf9afde3518aa6118a
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Mar 23 21:28:08 2017 -0500
+
+    updated about page
+
+commit 3f9d14f8b7a27036e1960d84df4aff25217dd240
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Mar 23 21:22:10 2017 -0500
+
+    updated park type model
+
+commit fc3ad314866b73da77b1d354217880818ae09c49
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Thu Mar 23 21:13:55 2017 -0500
+
+    Added Stats and Tools
+    
+    Added stats and tools to the about page
+
+commit acad3c82b14efd7430293d360db88dbe354c7795
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Mar 23 20:57:34 2017 -0500
+
+    updated state page formats
+
+commit 6d781db3793a7519629b7b1192260d204e126615
+Merge: 53d7795 41a9437
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Mar 23 20:32:12 2017 -0500
+
+    merging my branchMerge branch 'devbranch'
+
+commit 53d779599229542d788e6da8d1d0d58940aa7b79
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Mar 23 20:31:54 2017 -0500
+
+    finalized park type model
+
+commit 41a94370167a14ce487f9167037e956a57fb17dc
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Mar 23 20:30:26 2017 -0500
+
+    formatted state pages
+
+commit 52fc45c5b58ca523421e2f355d18157220c967ab
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Mar 23 20:22:22 2017 -0500
+
+    added my part to description.txt
+
+commit eea5d485550b28e8eb6d8dc93826959aecc63178
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Mar 23 20:17:13 2017 -0500
+
+    added more internal navigation
+
+commit a3ac0a9239572a6ff4ecbdc2477b285ef7ba6d84
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Mar 23 20:14:21 2017 -0500
+
+    minor formatting edits
+
+commit e11bf1ed0a09315681a30ce0c3bd6a3ee896bf8f
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Mar 23 20:07:42 2017 -0500
+
+    changed park attribute features to area
+
+commit 8d2bc59f2641691b7c799c0d845267e57b0b6b2a
+Merge: b0987fa 9c8639f
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Mar 23 19:58:37 2017 -0500
+
+    merging my working branchMerge branch 'devbranch'
+
+commit b0987fa4bcd56c3d8b0c29ab1c95a1a4e7e946a2
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Mar 23 19:58:16 2017 -0500
+
+    added park types pages and edited park types model
+
+commit 9c8639fc9e9f577f0fba39c0beb581af42118e52
+Author: wcv223 <cody.villarreal07@gmail.com>
+Date:   Thu Mar 23 19:56:48 2017 -0500
+
+    Made edits to all parks
+    
+    Added maps, youtube videos, and images to all three park pages
+
+commit 8185a32495557f46a8d05e3ff33a6832845e007c
+Author: wcv223 <cody.villarreal07@gmail.com>
+Date:   Thu Mar 23 18:42:06 2017 -0500
+
+    worked on big bend
+    
+    Add a picture and link to google map.
+
+commit c6df5e2f37979f006cd3a319a40a7705c83deb84
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Thu Mar 23 18:28:36 2017 -0500
+
+    Slight fix to Texas JavaScript
+
+commit 9577ae3625ea3cd0048dae8b9b4e67c07bfacf79
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Thu Mar 23 18:22:49 2017 -0500
+
+    Added simple JavaScript to Texas
+
+commit 5f897c4acee021b79be5d06e09ed06ad0335e49e
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Thu Mar 23 18:19:29 2017 -0500
+
+    Added more background pictures
+
+commit e2f01d58b24a9c7f5a8052d505b2c7178bb15780
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Mar 23 18:15:27 2017 -0500
+
+    updated fonts
+
+commit 2c05a0efbb4305be0aed82ea068131d08b64d5b5
+Author: wcv223 <cody.villarreal07@gmail.com>
+Date:   Thu Mar 23 17:44:03 2017 -0500
+
+    Updated about page
+    
+    Added my picture and short bio
+
+commit 28106d1c8d23eeb67db9288053e68b34f3304cd5
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Mar 23 17:15:19 2017 -0500
+
+    updated fonts
+
+commit 86e06e9ecd9e2ac5c146c85af24fee5749b998c7
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Mar 23 17:11:36 2017 -0500
+
+    updated fonts
+
+commit 26fe4f74b5107abe2e69f0bd120b0ab78555b342
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Mar 23 17:00:48 2017 -0500
+
+    added fonts
+
+commit a37defb9a3046d52f09e7a9dc5438eb26eb36b50
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Mar 23 16:40:14 2017 -0500
+
+    updated about
+
+commit 86d8e144f6f5abdd5657ff8a951e5be9db0aa8de
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Thu Mar 23 16:20:29 2017 -0500
+
+    Updated bio
+
+commit 9c673877261916c1d717ccddd1aec3e4f0d771e6
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Thu Mar 23 16:20:14 2017 -0500
+
+    fixed about.html to display kevin's picture
+
+commit b3588c7bb7753efc92bb17970becae56c40504dc
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Thu Mar 23 16:19:16 2017 -0500
+
+    added Kevin's picture
+
+commit 34c1b2b9731e99bc9636cf930b51ecaa3938e254
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Thu Mar 23 16:10:33 2017 -0500
+
+    added kevin's bio
+
+commit e4788155661651679b3b50091e7c717d8ce2ae37
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Mar 23 16:04:31 2017 -0500
+
+    formatting texas.html
+
+commit 477d6cec3a1f534f795405e18b07967a73b38b48
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Mar 23 15:33:49 2017 -0500
+
+    updated about page
+
+commit 986410dc9f74108b0695b071d0090fb95d9ddf49
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Thu Mar 23 13:13:36 2017 -0500
+
+    added my about me (neil) and updated Parks formatting
+
+commit 168645c6f0dab65d50c9639bac67c6c3880ce955
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Thu Mar 23 09:29:07 2017 -0500
+
+    Added bio
+    
+    Added bio for Johans
+
+commit 4b0ed5ba18438cf39e341122e4bdfde725f83ed4
+Author: woannaju <jwu@utexas.edu>
+Date:   Thu Mar 23 03:13:29 2017 -0500
+
+    updated about page
+
+commit cd384e389c8dcbda0bdf7c004e733aad5f5543c8
+Author: woannaju <jwu@utexas.edu>
+Date:   Wed Mar 22 23:05:26 2017 -0500
+
+    updated css
+
+commit 45c7d145684ec61eb0d2444e46a2bcddff966c92
+Author: Kevin Chiu <kevinnchiu@utexas.edu>
+Date:   Wed Mar 22 21:50:55 2017 -0500
+
+    Fixed Anusher's picture
+
+commit 68f599b07e453d909d27033b1999ce71f7437e20
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Wed Mar 22 20:50:21 2017 -0500
+
+    Added a descriptions file
+    
+    Added text file stating what members were responsible for
+
+commit 68688301901f7647ea32c9abf73f3d5fd22b4165
+Author: woannaju <jwu@utexas.edu>
+Date:   Wed Mar 22 20:34:39 2017 -0500
+
+    updated images
+
+commit c2cb21ed3da62ce48218de2bba19e9d6b3dbc0a6
+Author: woannaju <jwu@utexas.edu>
+Date:   Wed Mar 22 20:33:38 2017 -0500
+
+    added bg images
+
+commit e70935082a0cdba0e5931004a161a2cb32756308
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Wed Mar 22 20:25:38 2017 -0500
+
+    Fixing Image
+
+commit 20d27964f111e4c6d3412de7f72867f74b84ad8e
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Wed Mar 22 20:23:32 2017 -0500
+
+    Added Bio (Anusher)
+
+commit ac28e088097e3745cb79249e88bf1df5c9e89def
+Merge: 1e055aa b97d8fa
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Wed Mar 22 20:22:51 2017 -0500
+
+    About page
+
+commit 1e055aa76eebb1bf6dd5edd4aff12b778277893a
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Wed Mar 22 20:20:49 2017 -0500
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       about.html
+
+commit b97d8fa953f40f5deaa92c44cd87ff6da7291a7c
+Author: woannaju <jwu@utexas.edu>
+Date:   Wed Mar 22 19:55:29 2017 -0500
+
+    updated nav bar
+
+commit 1d425a6385c7952ee5802abc212c0cf054eba339
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Wed Mar 22 16:45:23 2017 -0500
+
+    Updated images in State.html
+    
+    updated images for state.html
+
+commit ee656334398a3cfb6beb0755d5f4e49d30f5e724
+Merge: 6a5cc78 8b3f4cc
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Wed Mar 22 16:43:57 2017 -0500
+
+    Added images folder
+
+commit 6a5cc78ccfb8b808683d524ef165f35997e7ab22
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Wed Mar 22 16:41:16 2017 -0500
+
+    Added images folder
+
+commit 8b3f4ccb26c0edb97a2bbccf1a9914602891b9ad
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Wed Mar 22 13:40:52 2017 -0500
+
+    updated States css and fixed minor nav bar issue
+
+commit 3238870c8224e1439bc1ae85d2e6bc943c8e71d9
+Author: woannaju <jwu@utexas.edu>
+Date:   Wed Mar 22 13:26:25 2017 -0500
+
+    updated nav bar links
+
+commit 323b0d682607c16194f9a8f9bf6058e0fcf33d85
+Merge: 365270a e3d6989
+Author: woannaju <jwu@utexas.edu>
+Date:   Wed Mar 22 13:23:22 2017 -0500
+
+    updated pages
+
+commit 365270a01736e2c12e2ec3d52bee6b8e94c0f220
+Author: woannaju <jwu@utexas.edu>
+Date:   Wed Mar 22 13:22:10 2017 -0500
+
+    updated pages
+
+commit e3d6989280f864b2c34ef49ff5a4fc04e3b4fee1
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Wed Mar 22 13:18:23 2017 -0500
+
+    fixed nav bar for park instances
+
+commit 8264b0a5cad546a0a184b82728565f42c60e0d76
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Wed Mar 22 12:22:54 2017 -0500
+
+    Fixed links in nav bar
+
+commit 6cc10e0cdfd0cd3332c2140892167f04318d986c
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Wed Mar 22 11:59:19 2017 -0500
+
+    Updated Pages
+
+commit 3360d2130bde5526685bbb19365945d585d31fc6
+Author: JD0110 <jdhuka@utexas.edu>
+Date:   Wed Mar 22 11:59:09 2017 -0500
+
+    Added California and Florida state pages
+    
+    Added state pages for California and Florida
+
+commit 38195fb6b0d83dffe3a9fa721940c0e376d6b1f2
+Author: anushermomin <anusher.momin@utexas.edu>
+Date:   Wed Mar 22 11:56:50 2017 -0500
+
+    Adding State and Texas pages
+
+commit ee19e1127a1985f0fef0895647ba1c24286aaacf
+Author: woannaju <jwu@utexas.edu>
+Date:   Wed Mar 22 11:50:59 2017 -0500
+
+    added park types page
+
+commit f539a0d29c47f315c8605b5cf58f26f615263164
+Author: woannaju <jwu@utexas.edu>
+Date:   Wed Mar 22 10:38:49 2017 -0500
+
+    added pages and basic css
+
+commit 65e137ecb2917b1c7e379540b8b0ee59add046ed
+Author: woannaju <jwu@utexas.edu>
+Date:   Wed Mar 22 10:37:55 2017 -0500
+
+    added nav bar
+
+commit c16c69e3f461a86b48195b2e5d38e6e9439013cc
+Author: wcv223 <cody.villarreal07@gmail.com>
+Date:   Wed Mar 22 00:14:14 2017 -0500
+
+    three basic park descriptions
+    
+    All three park pages have been made and show basic info
+
+commit 6ab128cc5f7e8e15ff20a9a6bc5289bc655b8eab
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Tue Mar 21 23:23:51 2017 -0500
+
+    added navigation links to Park model
+
+commit 9d6f554507167dea4efda274ab8b37acd1a99dd3
+Merge: e1a790d 29c9f67
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Tue Mar 21 23:17:29 2017 -0500
+
+    Merge branch 'master' of https://github.com/woannaju/cs329e-idb into devbranch
+
+commit e1a790d55df9b6cb21707fddd0f2182077fac2cc
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Tue Mar 21 23:14:44 2017 -0500
+
+    built basic version of Parks model
+
+commit 29c9f67949cc79553c8995ce7cbd2ff0068af34c
+Author: wcv223 <cody.villarreal07@gmail.com>
+Date:   Tue Mar 21 23:14:22 2017 -0500
+
+    Changed html names
+    
+    Started on big bend and changed the other park names
+
+commit a1fb5f0a39dad2c13809acfe4460599f076ea811
+Author: Neil Desai <ndesai1996@gmail.com>
+Date:   Tue Mar 21 22:25:05 2017 -0500
+
+    added Park model and 3 instances
+
+commit 46c52e854d581f0a2ad92a4194c3d0b1706721fc
+Author: woannaju <jwu@utexas.edu>
+Date:   Mon Mar 20 14:01:37 2017 -0500
+
+    Initial commit
