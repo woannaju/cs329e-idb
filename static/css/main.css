@@ -26,7 +26,7 @@ body{
 
 }
 .frontpage{
-	background-image: url("./images/fp_bg.jpg");
+	background-image: url("../images/fp_bg.jpg");
 	background-position:left top;
 	background-size: 100%;
 	background-repeat: no-repeat;
