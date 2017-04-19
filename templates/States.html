@@ -15,13 +15,13 @@
 		<!-- NAV BAR (BOOTSTRAPPED) -->
     <nav class="navbar navbar-default" style = "margin-bottom:0px">
       <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">USA Parks</a>
+        <a class="navbar-brand" href="{{ url_for('index') }}">USA Parks</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item active"><a class="nav-link" href="States.html">States</a></li>
-        <li class="nav-item"><a class="nav-link" href="parks_model.html">Parks</a></li>
-        <li class="nav-item"><a class="nav-link" href="park_types.html">Park Types</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About Us</a></li>
+        <li class="nav-item active"><a class="nav-link" href="{{ url_for('states') }}">States</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('parks') }}">Parks</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('parktypes') }}">Park Types</a></li>
       </ul>
     </nav>
 		<div class="transparent">
@@ -50,42 +50,42 @@
 			<tr id="r1">
 				<td><a href="Texas.html">Texas</a></td>
 				<td>Austin</td>
-				<td><img src="./images/texas.jpg" alt="Texas" style="width: 100%"></td>
+				<td><img src="static/images/texas.jpg" alt="Texas" style="width: 100%"></td>
 				<td><a href="./bigbend_park.html">Big Bend National Park</a></td>
 				<td>Southwestern</td>
 			</tr>
 			<tr id="r2">
 				<td><a href="California.html">California</a></td>
 				<td>Sacramento</td>
-				<td><img src="./images/california.jpg" alt="California" style="width: 100%"></td>
+				<td><img src="static/images/california.jpg" alt="California" style="width: 100%"></td>
 				<td><a href="./Anza-Borrego_park.html">Anza-Borrego Desert State Park</a></td>
 				<td>Western/Pacific</td>
 			</tr>
 			<tr id="r3">
 				<td><a href="Florida.html">Florida<a/></td>
 				<td>Tallahassee</td>
-				<td><img src="./images/florida.jpg" alt="Florida" style="width: 100%"></td>
+				<td><img src="static/images/florida.jpg" alt="Florida" style="width: 100%"></td>
 				<td><a href="./Timucuan_park.html">Timucuan Preserve</a></td>
 				<td>Southeastern/Atlantic</td>
 			</tr>
 			<tr id="r4">
 				<td><a href="New York.html">New York</a></td>
 				<td>Albany</td>
-				<td><img src="./images/new_york.jpg" alt="New York" style="width: 100%"></td>
+				<td><img src="static/images/new_york.jpg" alt="New York" style="width: 100%"></td>
 				<td><a href="./Central_Park.html">Central Park</a></td>
 				<td>Northeastern</td>
 			</tr>
 			<tr id="r5">
 				<td><a href="Washington.html">Washington</a></td>
 				<td>Olympia</td>
-				<td><img src="./images/washington.jpg" alt="Washington" style="width: 100%"></td>
+				<td><img src="static/images/washington.jpg" alt="Washington" style="width: 100%"></td>
 				<td><a href="./Washington_State_park.html">Deception Pass State Park</a></td>
 				<td>Northwestern</td>
 			</tr>
 			<tr id="r6">
 				<td><a href="Wyoming.html">Wyoming</a></td>
 				<td>Cheyenne</td>
-				<td><img src="./images/wyoming.jpg" alt="Wyoming" style="width: 100%"></td>
+				<td><img src="static/images/wyoming.jpg" alt="Wyoming" style="width: 100%"></td>
 				<td><a href="./Yellowstone_park.html">Yellowstone National Park</a></td>
 				<td>Midwestern</td>
 			</tr>
