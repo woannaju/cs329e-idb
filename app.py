@@ -35,4 +35,4 @@ def parktypes():
 	return render_template('park_types.html')
 
 if __name__ == '__main__':
-	app.run() # Run application
+	app.run('107.170.39.210','80') # Run application
