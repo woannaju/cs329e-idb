@@ -84,7 +84,7 @@ def texas():
 
 @app.route('/timucuanpark')
 def timucuanpark():
-	return render_template('Timuncuan_park.html')
+	return render_template('Timucuan_park.html')
 
 @app.route('/washingtonstatepark')
 def washingtonstatepark():
