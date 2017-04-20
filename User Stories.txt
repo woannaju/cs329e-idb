@@ -1,0 +1,29 @@
+USER STORY 1:
+The end-user would like an informational webiste that focuses on travel and parks. This website should aim to allow users to gain knowledge of the different kinds of parks and helps them find which one fits best to their interest.
+Estimated Time: 20
+Actual Time: 25
+Comments: We broke this project down into three phases and worked on it iteratively. Phase I we focused mainly on the front-end of the project and gathering and displaying our data. Phase II focused more on back-end where we implemented sorting features according to which attribute you want to sort and a little front-end using Bootstrap to create a more professional website display. Phase III consisted of implementing Flask for the back-end and utilizing Digital Ocean as a tool for hosting our webiste.
+
+USER STORY 2:
+The end-user would like to navigate through the instances of a particular model in the USA Parks page. He/she proposed that the sorting function should be done in ascending and descending order, and based on which attribute they click on.
+Estimated Time: 6 hours
+Actual Time: 7 hours
+Comments: This was very difficult to implement especially when accounting for all the attributes for each instance. I created a state-flag for each attribute that'll remember in which order it's currently sorting in, and will reverse that order when you click on the attribute name to switch the sorting order.
+
+USER STORY 3:
+The end-user would like multiple images and videos that provide information visually for each instance. The images should enable the user to further their understanding of the specific instance and model.
+Estimated Time: 2
+Actual Time: 2
+Comments: We've added some helpful images of what certain parks look like and what each state is known for as well as their relative locations in the U.S.
+
+USER STORY 4:
+The end-user would like the front-end of the website to utilize Bootstrap. Bootstrap should   be used to create a similar and aesthetically pleasing theme to unite the pages.
+Estimated Time:
+Actual Time:
+Comments:
+
+USER STORY 5:
+The end-user would like helpful links on the instance pages linking to other important and relevant pages.
+Estimated Time: 1
+Actual Time: 1
+Comments: This played a significant role in the way this website runs. We wanted to make sure the user is always connected and if he/she needed more information regarding a state, park, or type of park, sufficient links are provided to guide them to the correct page with resourceful information.
