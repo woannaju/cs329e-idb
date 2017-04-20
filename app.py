@@ -17,7 +17,7 @@ URLs that will call the index() function if running app.py on localhost:
 @app.route('/index') # Secondary URL for function
 def index():
 	return render_template('index.html') # located in templates/
-	
+
 @app.route('/about')
 def about():
 	return render_template('about.html')
@@ -25,7 +25,7 @@ def about():
 @app.route('/states')
 def states():
 	return render_template('States.html')
-	
+
 @app.route('/parks')
 def parks():
 	return render_template('parks_model.html')
